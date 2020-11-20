@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radio_hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HINDI" />
+
+        <RadioButton
+            android:id="@+id/radio_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENGLISH" />
+
+        <RadioButton
+            android:id="@+id/radio_vi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIETNAMESE" />
+
+        <RadioButton
+            android:id="@+id/radio_ko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KOREAN" />
+
+    </RadioGroup>
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/submit"
+        android:background="@drawable/button_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit" />
+
+</LinearLayout>

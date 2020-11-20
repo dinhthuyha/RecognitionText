@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_re"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recognition Text and Translate"
+            android:textColor="@color/colorAccent"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/txtR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image to Recognition"
+            android:textSize="50px" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/my_border"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/btnRecog"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="5dp"
+            android:text="Get text" />
+
+        <TextView
+            android:padding="20dp"
+            android:id="@+id/txtRecog"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/my_border"
+            android:scrollbars="vertical"
+            android:textSize="35px" />
+
+        <Button
+            android:id="@+id/btnTranslate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Translate " />
+
+
+    </LinearLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fb_menu"
+        android:layout_width="60dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        app:fab_colorPressed="@color/colorAccent"
+        app:menu_colorNormal="@color/colorAccent">
+
+        <com.github.clans.fab.FloatingActionButton
+
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_c"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorAccent" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brush"
+            app:fab_colorNormal="@color/colorAccent"
+
+            app:fab_colorPressed="@color/colorAccent" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/grabelly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_collections_24"
+            app:fab_colorNormal="@color/colorAccent"
+
+            app:fab_colorPressed="@color/colorAccent" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>
+
+

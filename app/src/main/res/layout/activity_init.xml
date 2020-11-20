@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.InitActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Recognition Text and Translate"
+        android:textColor="@color/colorAccent"
+        android:textSize="60px" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="60dp" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fb_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageView"
+        android:layout_marginBottom="-20dp"
+        android:padding="16dp"
+        app:fab_colorPressed="@color/colorAccent"
+        app:menu_colorNormal="@color/colorAccent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_camera"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorAccent" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brush"
+            app:fab_colorNormal="@color/colorAccent"
+
+            app:fab_colorPressed="@color/colorAccent" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/grabelly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collection"
+            app:fab_colorNormal="@color/colorAccent"
+
+            app:fab_colorPressed="@color/colorAccent" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRecog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recognition Text" />
+
+        <TextView
+            android:id="@+id/txtRecog"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/my_border"
+           />
+
+        <Button
+            android:id="@+id/btnTranslate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Translate " />
+
+        <ImageView
+            android:id="@+id/imgTranslate"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

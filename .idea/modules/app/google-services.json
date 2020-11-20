@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "724103205676",
+    "firebase_url": "https://recognitiontext-35f99.firebaseio.com",
+    "project_id": "recognitiontext-35f99",
+    "storage_bucket": "recognitiontext-35f99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724103205676:android:3d86e78db0401a9a251289",
+        "android_client_info": {
+          "package_name": "com.example.recognitiontext"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724103205676-t419i4rjivobmmuung7otno7du03bvfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recognitiontext",
+            "certificate_hash": "e4d79cc77d449ca431e8884ea475befcdfbe6d32"
+          }
+        },
+        {
+          "client_id": "724103205676-gji3i1tqe4ihpa250hupj090s9rbm0nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM6fnnpl_HMozgfyUiwy2Ms8GyW6ALKJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724103205676-gji3i1tqe4ihpa250hupj090s9rbm0nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
